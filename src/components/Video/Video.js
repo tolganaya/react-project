@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './VideoStyles.css'
+import React from 'react';
+import './VideoStyles.css';
 
-import spaceVideo from '../../assets/web-back.mp4'
+import spaceVideo from '../../assets/web-back.mp4';
 
 const Video = () => {
     return (
@@ -10,16 +9,18 @@ const Video = () => {
             <video autoPlay loop muted id='video'>
                 <source src={spaceVideo} type='video/mp4' />
             </video>
-            <div className='content'>
+            {/* <div className='content'>
                 <h1>ESKE SALU.</h1>
                 <p>Сгенерируй QR-код и сохрани воспоминания об умерших близких</p>
                 <div>
-                    {/* <Link to='/training' className='btn'>Training</Link> */}
-                    <Link to='/contact' className='btn btn-light'>Начать</Link>
+                    <Link to='/training' className='btn'>Training</Link>
+                    <Link to='/register' className='btn btn-light'>
+                    <Button variant="contained" color="inherit">Начать</Button>                        
+                    </Link>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
-}
+};
 
-export default Video
+export default Video;

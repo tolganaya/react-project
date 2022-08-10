@@ -6,7 +6,7 @@ import Home from './routes/Home'
 import Pricing from './routes/Pricing'
 import Training from './routes/Training';
 import { Header } from "./components";
-import { FullPost, QrPost, Registration, AddPost, Login } from "./pages";
+import { FullPost, QrPost, Registration, AddPost, Login, login } from "./pages";
 import { fetchAuthMe, selectIsAuth } from './redux/slices/auth';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route path="/posts/:id/edit" element={<AddPost />} />
         <Route path="/posts/:id/qr" element={<QrPost />} />
         <Route path="/add-post" element={<AddPost />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<login />} />
         <Route path="/register" element={<Registration />} />
       </Routes>
     </>

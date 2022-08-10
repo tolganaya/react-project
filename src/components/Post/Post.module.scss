@@ -5,6 +5,7 @@ $blue: #4361ee;
   border: 1px solid #dedede;
   border-radius: 6px;
   overflow: hidden;
+  margin: 2px 40px 20px 40px;
   margin-bottom: 15px;
   position: relative;
 
@@ -46,6 +47,7 @@ $blue: #4361ee;
 
   p {
     font-size: 22px;
+    color: #000;
     line-height: 36px;
   }
 }
@@ -146,3 +148,4 @@ $blue: #4361ee;
 .qr-style {
   padding-bottom: 3em;
 }
+
